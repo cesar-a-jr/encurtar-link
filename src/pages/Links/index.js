@@ -60,7 +60,7 @@ export default function Links(){
 
         {emptyLinst && (
           <div className="links-items">
-            <div className="empty-text">Sua Lista esta vazia...</div>
+            <div className="empty-text">Sua Lista está vazia...</div>
           </div>
         )}
 
