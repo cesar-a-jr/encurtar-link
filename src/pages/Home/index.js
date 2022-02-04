@@ -4,7 +4,9 @@ import './home.css';
 
 import Menu from '../../components/menu';
 import LinkItem from '../../components/LinkItem';
+
 import api from '../../services/api';
+import { saveLinks } from '../../services/storeLinks'
 
 export default function Home(){
     const[link, setLink] =useState('');
@@ -19,6 +21,10 @@ export default function Home(){
         SetData(response.data);
         SetShowModal(true);
 
+        saveLinks('@Link', response.data);
+
+
+        setLink('')
       }catch{
         alert('Ops, Parece que algo deu errado!')
         setLink('')
