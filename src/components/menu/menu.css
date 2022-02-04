@@ -1,0 +1,34 @@
+.menu{
+    position: absolute;
+    top:20px;
+    right:5%;
+    font-weight: bold;
+    display: flex;
+    animation: slideX 2s;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.social{
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+}
+.menu-item{
+    color: #000;
+    background-color: #fff;
+    padding: 12px 24px;
+    border-radius: 4px;
+}
+
+@keyframes slideX {
+    from {
+        transform: translateX(90px);
+    }   
+    to {
+
+        transform: translateX(0px);
+    } 
+}
