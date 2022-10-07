@@ -6,6 +6,7 @@
 .links-header {
     display:flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .links-header svg{
